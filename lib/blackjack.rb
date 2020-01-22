@@ -61,7 +61,7 @@ def runner
 
   until card_count >= 21 do
     new = hit?(card_count)
-    puts display_card_total(new)
+    display_card_total(new)
     card_count = new
   end
   puts end_game(new)
