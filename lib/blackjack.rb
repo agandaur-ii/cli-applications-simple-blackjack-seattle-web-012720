@@ -34,7 +34,7 @@ def hit?(card_total)
 
   until(input == "s" or input == "h")
     invalid_command
-    puts prompt_user
+    prompt_user
     input = get_user_input
   end
   
