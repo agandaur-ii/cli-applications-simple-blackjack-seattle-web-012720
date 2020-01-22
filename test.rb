@@ -32,11 +32,11 @@ def hit?(card_total)
   prompt_user
   input = get_user_input
 
-  until(input == "s" or input == "h")
-    invalid_command
-    prompt_user
-    input = gets.chomp
-  end
+  #until(input == "s" or input == "h")
+  #  invalid_command
+  #  prompt_user
+  #  input = gets.chomp
+  #end
   
   if input == "s"
     puts card_total
@@ -45,6 +45,9 @@ def hit?(card_total)
   if input == "h"
     puts deal_card + card_total
   end
+  
+  invalid_command
+  prompt_user
 end
 
 def invalid_command
