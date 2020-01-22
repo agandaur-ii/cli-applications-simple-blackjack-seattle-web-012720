@@ -64,6 +64,6 @@ def runner
     puts display_card_total(new)
     card_count = new
   end
-  return end_game(new)
+  puts end_game(new)
 end
     
