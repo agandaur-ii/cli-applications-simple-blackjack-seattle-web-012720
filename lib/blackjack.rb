@@ -56,7 +56,8 @@ end
 #####################################################
 
 def runner
-  welcome
+  puts welcome
+  puts initial_round
   card_count = initial_round
 
   until card_count >= 21 do
