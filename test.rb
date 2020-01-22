@@ -51,4 +51,14 @@ def invalid_command
   puts "Please enter a valid command"
 end
 
-puts hit?(12)
+def runner
+  welcome
+  og_count = initial_round
+  card_count = initial_round
+  puts card_count
+  hit?(card_count)
+  
+  if card_count >= 21
+    return end_game
+  end
+end
