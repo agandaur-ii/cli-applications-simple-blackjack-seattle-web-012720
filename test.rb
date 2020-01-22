@@ -51,7 +51,7 @@ def invalid_command
   puts "Please enter a valid command"
 end
 
-#def runner
+def runner
   welcome
   card_count = initial_round
 
@@ -61,6 +61,6 @@ end
     card_count = new
   end
   end_game(card_count)
-#end
+end
 
 puts runner
