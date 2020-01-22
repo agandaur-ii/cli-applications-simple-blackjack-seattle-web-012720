@@ -29,7 +29,7 @@ def initial_round
 end
 
 def hit?(card_total)
-  puts prompt_user
+  prompt_user
   input = get_user_input
 
   until(input == "s" or input == "h")
