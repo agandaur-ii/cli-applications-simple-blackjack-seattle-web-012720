@@ -57,8 +57,9 @@ end
 
 def runner
   puts welcome
-  puts initial_round
+  initial_round
   card_count = initial_round
+  puts display_card_total(card_count)
 
   until card_count >= 21 do
     new = hit?(card_count)
