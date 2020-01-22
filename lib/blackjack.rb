@@ -39,11 +39,11 @@ def hit?(card_total)
   #end
   
   if input == "s"
-    puts card_total
+    return card_total
   end
   
   if input == "h"
-    puts deal_card + card_total
+    return deal_card + card_total
   end
   
   invalid_command
