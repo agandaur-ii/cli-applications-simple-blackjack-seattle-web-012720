@@ -30,20 +30,20 @@ end
 
 def hit?(card_total)
   prompt_user
-  get_user_input
+  input = get_user_input
 
-  until(get_user_input == "s" or get_user_input == "h")
+  until(input == "s" or input == "h")
     invalid_command
     prompt_user
-    get_user_input = gets.chomp
+    input = gets.chomp
   end
   
-  if get_user_input == "s"
-    puts card_total
+  if input == "s"
+    return card_total
   end
   
-  if get_user_input == "h"
-    puts deal_card + card_total
+  if input == "h"
+    return deal_card + card_total
   end
 end
 
