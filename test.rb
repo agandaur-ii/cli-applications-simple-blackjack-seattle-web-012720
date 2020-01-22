@@ -45,9 +45,6 @@ def hit?(card_total)
   if input == "h"
     puts deal_card + card_total
   end
-  puts "=" * 20
-  get_user_input
-  puts "=" * 20
 end
 
 def invalid_command
