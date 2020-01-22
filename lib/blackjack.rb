@@ -35,7 +35,7 @@ def hit?(card_total)
   until(input == "s" or input == "h")
     invalid_command
     prompt_user
-    input = gets.chomp
+    input = get_user_input
   end
   
   if input == "s"
