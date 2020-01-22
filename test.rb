@@ -56,10 +56,9 @@ def runner
   og_count = initial_round
   card_count = initial_round
   puts card_count
-  hit?(card_count)
   
-  while card_count < 21 do
-    
+  until card_count >= 21 do
+    hit?(card_count)
   end
-  
+  end_game
 end
