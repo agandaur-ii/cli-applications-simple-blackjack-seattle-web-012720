@@ -62,4 +62,4 @@ def runner
   end_game
 end
 
-puts runner
+puts hit?(2)
