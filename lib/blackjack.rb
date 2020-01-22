@@ -69,3 +69,4 @@ def runner
   puts end_game(new)
 end
     
+puts runner
