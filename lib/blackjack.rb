@@ -63,9 +63,9 @@ def runner
   card_count = initial_round
 
   until card_count >= 21 do
-    hit?(card_count)
+    new = hit?(card_count)
     display_card_total(card_count)
-    card_count = hit?(card_count)
+    card_count = new
   end
   end_game
 end
