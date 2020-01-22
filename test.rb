@@ -60,6 +60,8 @@ def runner
   puts card_count
   
   until card_count >= 21 do
+    hit?(card_count)
+    display_card_total(card_count)
     card_count = hit?(card_count)
   end
   end_game
