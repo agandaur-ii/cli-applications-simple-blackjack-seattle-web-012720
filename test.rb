@@ -58,7 +58,8 @@ def runner
   puts card_count
   hit?(card_count)
   
-  if card_count >= 21
-    return end_game
+  while card_count < 21 do
+    
   end
+  
 end
