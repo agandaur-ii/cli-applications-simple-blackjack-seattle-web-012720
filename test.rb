@@ -53,7 +53,6 @@ end
 
 def runner
   welcome
-  og_count = initial_round
   card_count = initial_round
   puts card_count
   
